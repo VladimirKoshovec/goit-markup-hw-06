@@ -75,6 +75,7 @@ body {
 }
 
 .backdrope-form{
+
     position: absolute;
     width: 528px;
     height: 581px;
@@ -86,9 +87,12 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    padding: 40px;
+
 }
 
 .backdrope-close-button{
+    position: absolute;
     cursor: pointer;
     border: 0px;
     width: 30px;
@@ -98,17 +102,51 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    margin-top: 8px;
-    margin-left: 490px; 
+    top: 8px;
+    right: 8px;
 
 }
 
 .backdrope.is-hidden {
     pointer-events: none;
-    
     opacity: 0;
     transform: scale(1.2);
 }
+
+/* ----------------------FORM-------------------------- */
+
+.input-area{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.form-field{
+   width: 100%;
+   padding: 11px;
+   margin-bottom: 10px;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+
+.form-caption{
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--blacknav);
+   margin-bottom: 12px;
+}
+
+/* ---------------------/FORM-------------------------- */
 
 /*----------------------/backdrope----------------------*/
 

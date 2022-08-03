@@ -18,10 +18,24 @@
 
 <body>
     <div class="backdrope is-hidden" data-modal>
-        <div  class="backdrope-form">
-          <button type="button" class="backdrope-close-button" data-modal-close>
-          </button>
-        </div>
+        <!-- <div class="backdrope-form"> -->
+        <form name="main-from" class="backdrope-form">
+          <button type="button" class="backdrope-close-button" data-modal-close></button>
+          <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
+          
+        <ul class="input-area">
+            <li>
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" name="name" id="name" class="form-field">
+            </li>
+            <li>
+                <label for="telephone" class="form-label">Телефон</label>
+                <input type="tel" name="name" id="telephone" class="form-field">
+            </li>
+        </ul>
+
+        </form>
+        <!-- </div> -->
     </div>
     <header class="pagehader">
         <div class="hader-nav container">
