@@ -18,10 +18,16 @@
 
 <body>
     <div class="backdrope is-hidden" data-modal>
-        <!-- <div class="backdrope-form"> -->
-        <form name="main-from" class="backdrope-form">
-          <button type="button" class="backdrope-close-button" data-modal-close></button>
-          <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
+        
+    <form name="main-from" class="backdrope-form">
+
+        <button type="button" class="backdrope-close-button" data-modal-close>
+            <svg class="backdrope-close-svg" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
           
         <ul class="input-area">
             <li>
@@ -30,12 +36,26 @@
             </li>
             <li>
                 <label for="telephone" class="form-label">Телефон</label>
-                <input type="tel" name="name" id="telephone" class="form-field">
+                <input type="tel" name="telephone" id="telephone" class="form-field">
+            </li>
+            <li>
+                <label for="email" class="form-label">Почта</label>
+                <input type="email" name="email" id="email" class="form-field">
+            </li>
+            <li>
+                <label for="comment" class="form-label">Комментарий</label>
+                <textarea name="email" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
             </li>
         </ul>
 
-        </form>
-        <!-- </div> -->
+          <div class="chebox-group">
+            <input type="checkbox" name="contract" id="contract" class="form-check-box">
+            <label for="contract" class="form-chek-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+          </div>
+
+          <button type="submit" class="form-btn">Отправить</button>
+    </form>
+
     </div>
     <header class="pagehader">
         <div class="hader-nav container">
