@@ -31,7 +31,7 @@
           
         <ul class="input-area">
             <li>
-                <label for="name" class="form-label">Имя</label>
+                <label for="name" class="form-label input-cover">Имя</label>
                 <div class="input-cover">
                     <input type="text" name="name" id="name" class="form-field">
                     <svg width="18px" height="18px" class="form-field-icon"><use href="./images/icons.svg#icon-person"></use></svg>
@@ -57,9 +57,13 @@
             </li>
         </ul>
 
-          <div class="chebox-group">
-            <input type="checkbox" name="contract" id="contract" class="form-check-box">
-            <label for="contract" class="form-chek-label">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+          <div class="checkbox-group">
+            <input type="checkbox" name="contract" id="contract-agree" class="form-check-box">
+            <label for="contract-agree" class="form-chek-label">
+                <div class="checkbox-icon"></div>
+                Соглашаюсь с рассылкой и принимаю 
+                <a href="#">Условия договора</a>
+            </label>
           </div>
 
           <button type="submit" class="form-btn">Отправить</button>
