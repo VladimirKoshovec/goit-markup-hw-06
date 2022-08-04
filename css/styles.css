@@ -223,30 +223,32 @@ body {
 }
 
 .form-check-box{
-    /* -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; */
+    appearance: none;
     position: absolute;
 }
 
 .checkbox-group{
     margin-bottom: 30px;
-    
 }
 
 .checkbox-icon{
-    /* display: inline-block; */
+    display: inline-block;
     margin-right: 7px;
 
     border: 3px solid var(--blacknav);
-    width:16px;
+    width: 16px;
     height: 15px;
     border-radius: 2px;
 }
 
 .form-check-box:checked + .checkbox-icon{
     background-image: url(../images/icon-check.svg);
+    background-size: contain;
     background-color: var(--brandblue);
+    border-color: var(--brandblue);
+    background-origin: border-box;
 }
 
 
