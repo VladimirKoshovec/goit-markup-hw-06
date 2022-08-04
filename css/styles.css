@@ -105,6 +105,13 @@ body {
     top: 8px;
     right: 8px;
     padding: 0;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.backdrope-close-button:hover,
+.backdrope-close-button:focus{
+   fill: var(--brandblue);
 }
 
 .backdrope.is-hidden {
@@ -137,18 +144,42 @@ body {
 
 .form-field{
    width: 100%;
+   height: 40px;
    padding: 11px;
+   padding-left: 42px;
    margin-bottom: 10px;
 
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
+
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus,
+.form-field:focus + .form-field-icon{
+    fill: var(--brandblue);
+    border-color: var(--brandblue);
+    outline: none;
+}
+
+.input-cover{
+    position: relative;
+}
+
+.form-field-icon{
+   position: absolute;
+   top:11px;
+   left:12px;
 }
 
 .form-label{
     display: block;
     margin-bottom: 4px;
 }
-
 
 .form-comment{
     height: 120px;
@@ -159,8 +190,14 @@ body {
     border-radius: 4px;
 
     padding: 12px 16px;
-
     margin-bottom: 20px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-comment:focus{
+    border-color: var(--brandblue);
+    outline: none;
 }
 
 .form-comment::placeholder{
@@ -182,9 +219,6 @@ body {
     padding: 0;
 }
 
-.form-check-box{
-    
-}
 .chebox-group{
     display: block;
     margin-left: auto;
