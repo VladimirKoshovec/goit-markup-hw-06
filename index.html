@@ -405,9 +405,14 @@
             </div>
             <div class="footer-form-container">
                 <p class="footer-form-caption">Подпишитесь на рассылку</p>
-            <form name="footer-form"></form>
+            <form name="footer-form" class="footer-form">
                 <input type="email" placeholder="E-mail" class="footer-form-mail">
-                <button type="submit" class="footer-form-buton">Подписаться</button>
+                <button type="submit" class="footer-form-buton">
+                    <span class="button-text">Подписаться</span>
+                    <svg width="24" heigth="24" class="button-icon">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
             </form>
             </div>
         </div>
